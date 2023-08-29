@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>index.knit</title>
+
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="site_libs/r2d3-render-0.1.0/r2d3-render.js"></script>
+<script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+<script src="site_libs/r2d3-binding-0.2.6/r2d3.js"></script>
+<script src="site_libs/d3v6-6.2.0/d3.min.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<p><br> <br></p>
+<style type="text/css">
+code {
+    color: inherit;
+    background-color: white;
+    font-size: 19px !important;
+    font-weight: bold;
+}
+</style>
+<p><code>pivot_longer(cols = c(c1,c2,c3), names_to = "key", values_to = "vals")</code></p>
+<p><br> <br></p>
+<div id="htmlwidget-7c5fb61fe291e1c8342e" style="width:900px;height:550px;" class="r2d3 html-widget "></div>
+<script type="application/json" data-for="htmlwidget-7c5fb61fe291e1c8342e">{"x":{"data":{"x":[20,20,20,20,20,20,20,20,20,20,20,20,60,60,60,60,100,100,100,100,140,140,140,140],"y":[170,195,220,245,170,195,220,245,170,195,220,245,170,195,220,245,170,195,220,245,170,195,220,245],"color":["#d9d9d9","#d9d9d9","#d9d9d9","#d9d9d9","#d9d9d9","#d9d9d9","#d9d9d9","#d9d9d9","#d9d9d9","#d9d9d9","#d9d9d9","#d9d9d9","#df6e56","#eba394","#eba394","#eba394","#74AADB","#a7c9e9","#a7c9e9","#a7c9e9","#FDBE4B","#fed68d","#fed68d","#fed68d"],"text":["ID","1","2","3","ID","1","2","3","ID","1","2","3","c1","","","","c2","","","","c3","","",""]},"type":"data.frame","container":"svg","options":null,"script":"var d3Script = function(d3, r2d3, data, svg, width, height, options, theme, console) {\nthis.d3 = d3;\n\nsvg = d3.select(svg.node());\n/* R2D3 Source File:  pivot_float.js */\n    const squareHeight = 25;\n    const squareWidth = 40;\n\n    svg.append(\"text\")\n        .text(\"Next step\")\n        .attr(\"class\", \"button\")\n        .attr('x', d => 22 + 45)\n        .attr('y', d => 85 + squareHeight/2)\n        .attr(\"text-anchor\", \"middle\")\n        .attr(\"dominant-baseline\", \"central\")\n        .attr(\"font-weight\", \"bold\")\n    \n    var button = svg.append(\"rect\")\n        .attr(\"width\", 90)\n        .attr(\"height\", squareHeight)\n        .attr(\"class\", \"button\")\n        .classed(\"buttonRect\", true)\n        .attr(\"x\", 22)\n        .attr(\"y\", 85)\n        .attr(\"fill-opacity\", 0)\n        .attr(\"stroke\", \"black\")\n    \n    data.forEach(function (d) {\n        d.x = +d.x\n        d.y = +d.y\n    });\n    \n    svg.append(\"text\")\n        .text('pivot_longer(data, cols = c(\"c1\", \"c2\", \"c3\"), names_to = \"key\", values_to = \"vals\")')\n        .attr(\"y\", 540)\n        .attr(\"x\", 395)\n        .attr(\"text-anchor\", \"middle\")\n        .style(\"font-size\", \"18px\")\n        .attr(\"opacity\", 0)\n\n    let squares = svg.selectAll('.square')\n        .data(data)\n        .enter()\n    \t.append('g')\n    \t.attr('class', 'square')\n\n    svg.selectAll(\".square\")\n        .append(\"rect\")\n        .attr('x', d => d.x)\n        .attr('y', d => d.y)\n        .attr('width', squareWidth)\n        .attr('height', squareHeight)\n        .attr(\"fill\", d => d.color)\n        .attr(\"stroke\", \"white\")\n        .attr(\"stroke-width\", 3)\n\n    \n    svg.selectAll(\".square\")\n        .append(\"text\")\n        .text(d => d.text)\n        .attr('x', d => d.x + squareWidth/2)\n        .attr('y', d => d.y + squareHeight/2)\n        .attr(\"text-anchor\", \"middle\")\n        .attr(\"dominant-baseline\", \"central\")\n        .attr(\"font-weight\", \"bold\")\n        .style(\"font-size\", \"12px\")\n\n    var arc = d3.arc()\n        .innerRadius(30)\n        .outerRadius(30)\n        .startAngle(4*Math.PI/4)\n        .endAngle(6*Math.PI/4);\n\n    var arc2 = d3.arc()\n        .innerRadius(30)\n        .outerRadius(30)\n        .startAngle(6*Math.PI/4)\n        .endAngle(8*Math.PI/4);\n\n\n    svg.append(\"path\")\n        .attr(\"fill\", \"none\")\n        .attr(\"class\", \"textButton\")\n        .attr(\"stroke-width\", 1)\n        .attr(\"stroke\", \"darkgrey\")\n        .attr(\"transform\", \"translate(170, 340)\")\n        .attr(\"d\", arc2)\n        .attr(\"opacity\", 1)\n\n    svg\n        .append(\"text\")\n        .attr(\"class\", \"textButton\")\n        .text(\"Click\")\n        .attr(\"x\", 180)\n        .attr(\"y\", 314)\n        .attr(\"font-weight\", \"bold\")\n        .attr(\"text-anchor\", \"left\")\n        .attr(\"fill\", \"darkblue\")\n        .style(\"font-size\", \"12px\")\n        .attr(\"opacity\", 1)\n\n    svg\n        .append(\"text\")\n        .attr(\"class\", \"textButton\")\n        .text(\"To see next step\")\n        .attr(\"x\", 180)\n        .attr(\"y\", 327)\n        .attr(\"text-anchor\", \"left\")\n        .style(\"font-size\", \"11px\")\n        .attr(\"opacity\", 1)\n\n    var textGroupButton = svg\n        .append(\"g\")\n        .attr(\"class\", \"textGroupButton\")\n\n    svg.selectAll(\".textButton\")\n        .each(function() { \n            textGroupButton.append(() => this) \n        });\n\n    svg.selectAll(\"g.textGroupButton\")\n        .attr(\"transform\", \"translate(-72, -263)\")\n\n    var del = 75\n\n    function moveFirst(){\n\n        svg.selectAll(\"g.square\") // Moves second col\n            .filter(function(d, i) { return i > 11 && i < 16})\n            .classed(\"second\", true)\n            .transition()\n            .delay(200)\n            .duration(1000)\n            .ease(d3.easeCubicIn)\n            .attr(\"transform\", \"translate(10, 0)\")\n        \n        svg.selectAll(\"g.square\") // Moves third col\n            .filter(function(d, i) { return i > 15 && i < 20})\n            .classed(\"third\", true)\n            .transition()\n            .delay(100)\n            .duration(1000)\n            .ease(d3.easeCubicIn)\n            .attr(\"transform\", \"translate(20, 0)\")\n        \n        svg.selectAll(\"g.square\") // Moves fourth col\n            .filter(function(d, i) { return i > 19})\n            .classed(\"fourth\", true)\n            .transition()\n            .delay(0)\n            .duration(1000)\n            .ease(d3.easeCubicIn)\n            .attr(\"transform\", \"translate(30, 0)\")\n            \n        var sector = svg.append(\"path\")\n            .attr(\"fill\", \"none\")\n            .attr(\"class\", \"text1\")\n            .attr(\"stroke-width\", 1)\n            .attr(\"stroke\", \"darkgrey\")\n            .attr(\"transform\", \"translate(170, 280)\")\n            .attr(\"d\", arc)\n            .attr(\"opacity\", 0)\n\n        sector\n            .transition()\n            .delay(1400)\n            .duration(250)\n            .attr(\"opacity\", 1)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text1\")\n            .text(\"Step 1\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 314)\n            .attr(\"font-weight\", \"bold\")\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"12px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text1\")\n            .text(\"Selected columns\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 327)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text1\")\n            .text(\"are separated\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 339)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        svg.selectAll(\".text1\")\n            .transition()\n            .delay(1400)\n            .duration(250)\n            .attr(\"opacity\", 1)\n\n    }\n\n    function moveSecond(){\n\n        svg.selectAll(\"g\")\n            .filter(function(d, i) { return i < 4 || i > 11})\n            .clone(true)\n            .attr(\"class\", \"stay\")\n\n        svg.selectAll(\"g.stay\")\n            .transition()\n            .delay(0)\n            .duration(2100)\n            .ease(d3.easeCubicIn)\n            .attr(\"opacity\", 0.2)\n\n        svg.selectAll(\".text1\")\n            .transition()\n            .delay(0)\n            .duration(2100)\n            .attr(\"opacity\", 0.2)\n\n        svg.selectAll(\"g.square\")\n            .filter(function(d, i) { return i < 4})\n            .transition()\n            .delay(function(d,i){ return i * del+ (del * 13)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(310, -140)\")\n        \n        svg.selectAll(\"g.square\")\n            .filter(function(d, i) { return i > 11 && i < 16})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 9)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(310, -140)\")\n\n        svg.selectAll(\"g.square\")\n            .filter(function(d, i) { return i > 3 && i < 8})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 13)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(310, 0)\")\n\n        svg.selectAll(\"g.square\")\n            .filter(function(d, i) { return i > 15 && i < 20})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 5)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(270, 0)\")\n\n        svg.selectAll(\"g.square\")\n            .filter(function(d, i) { return i > 7 && i < 12})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 13)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(310, 140)\")\n\n        svg.selectAll(\"g.square\")\n            .filter(function(d, i) { return i > 19})\n            .transition()\n            .delay(function(d,i){ return i * del})\n            .duration(1000)\n            .attr(\"transform\", \"translate(230, 140)\")\n\n\n        var sector = svg.append(\"path\")\n            .attr(\"fill\", \"none\")\n            .attr(\"class\", \"text2\")\n            .attr(\"stroke-width\", 1)\n            .attr(\"stroke\", \"darkgrey\")\n            .attr(\"transform\", \"translate(170, 280)\")\n            .attr(\"d\", arc)\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text2\")\n            .text(\"Step 2\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 314)\n            .attr(\"font-weight\", \"bold\")\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"12px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text2\")\n            .text(\"Columns are\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 327)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text2\")\n            .text(\"grouped with ID\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 339)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        var textGroup2 = svg\n            .append(\"g\")\n            .attr(\"class\", \"textGroup2\")\n\n        svg.selectAll(\".text2\")\n            .each(function() { \n                textGroup2.append(() => this) \n            });\n\n        svg.selectAll(\"g.textGroup2\")\n            .attr(\"transform\", \"translate(230, 140)\")\n            \n        \n        svg.selectAll(\".text2\")\n            .transition()\n            .delay(2300)\n            .duration(250)\n            .attr(\"opacity\", 1)\n\n    }\n\n    function moveThird(){\n        svg.selectAll(\".text2\")\n            .transition()\n            .delay(0)\n            .duration(100)\n            .attr(\"opacity\", 0.2)\n\n        svg.selectAll(\"g.second\")\n            .filter(function(d, i) { return i > 0})\n            .transition()\n            .duration(1500)\n            .delay(100)\n            .attr(\"transform\", \"translate(350, -140)\")\n\n        svg.selectAll(\"g.third\")\n            .filter(function(d, i) { return i > 0})\n            .transition()\n            .duration(1500)\n            .delay(100)\n            .attr(\"transform\", \"translate(310, 0)\")\n\n        svg.selectAll(\"g.fourth\")\n            .filter(function(d, i) { return i > 0})\n            .transition()\n            .duration(1500)\n            .delay(100)\n            .attr(\"transform\", \"translate(270, 140)\")\n\n        var sector = svg.append(\"path\")\n            .attr(\"fill\", \"none\")\n            .attr(\"class\", \"text3\")\n            .attr(\"stroke-width\", 1)\n            .attr(\"stroke\", \"darkgrey\")\n            .attr(\"transform\", \"translate(170, 340)\")\n            .attr(\"d\", arc2)\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text3\")\n            .text(\"Step 3\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 314)\n            .attr(\"font-weight\", \"bold\")\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"12px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text3\")\n            .text(\"Values are\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 327)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text3\")\n            .text(\"copied to\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 339)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text3\")\n            .text(\"new column\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 351)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        var textGroup3 = svg\n            .append(\"g\")\n            .attr(\"class\", \"textGroup3\")\n\n        svg.selectAll(\".text3\")\n            .each(function() { \n                textGroup3.append(() => this) \n            });\n\n        svg.selectAll(\"g.textGroup3\")\n            .attr(\"transform\", \"translate(290, -153)\")\n            \n        \n        svg.selectAll(\".text3\")\n            .transition()\n            .delay(1500)\n            .duration(250)\n            .attr(\"opacity\", 1)\n\n    }\n\n    function moveFourth(){\n        svg.selectAll(\".text3\")\n        .transition()\n        .delay(0)\n        .duration(100)\n        .attr(\"opacity\", 0.2)\n\n        svg.select(\"g.second\")\n            .clone(true)\n            .classed(\"secondCloned\", true)\n\n        svg.select(\"g.second\")\n            .clone(true)\n            .classed(\"secondCloned2\", true)\n\n        svg.select(\"g.third\")\n            .clone(true)\n            .classed(\"thirdCloned\", true)\n\n        svg.select(\"g.third\")\n            .clone(true)\n            .classed(\"thirdCloned2\", true)\n\n        svg.select(\"g.fourth\")\n            .clone(true)\n            .classed(\"fourthCloned\", true)\n\n        svg.select(\"g.fourth\")\n            .clone(true)\n            .classed(\"fourthCloned2\", true)\n        \n        svg.select(\"g.second\")\n            .transition()\n            .delay(0)\n            .duration(1000)\n            .attr(\"transform\", \"translate(310, -115)\")\n        \n        svg.select(\"g.secondCloned2\")\n            .transition()\n            .delay(0)\n            .duration(1000)\n            .attr(\"transform\", \"translate(310, -90)\")\n    \n        svg.select(\"g.secondCloned\")\n            .transition()\n            .delay(0)\n            .duration(1000)\n            .attr(\"transform\", \"translate(310, -65)\")\n\n        svg.select(\"g.third\")\n            .transition()\n            .delay(0)\n            .duration(1000)\n            .attr(\"transform\", \"translate(270, 25)\")\n        \n        svg.select(\"g.thirdCloned2\")\n            .transition()\n            .delay(0)\n            .duration(1000)\n            .attr(\"transform\", \"translate(270, 50)\")\n    \n        svg.select(\"g.thirdCloned\")\n            .transition()\n            .delay(0)\n            .duration(1000)\n            .attr(\"transform\", \"translate(270, 75)\")\n\n        svg.select(\"g.fourth\")\n            .transition()\n            .delay(0)\n            .duration(1000)\n            .attr(\"transform\", \"translate(230, 165)\")\n        \n        svg.select(\"g.fourthCloned2\")\n            .transition()\n            .delay(0)\n            .duration(1000)\n            .attr(\"transform\", \"translate(230, 190)\")\n    \n        svg.select(\"g.fourthCloned\")\n            .transition()\n            .delay(0)\n            .duration(1000)\n            .attr(\"transform\", \"translate(230, 215)\")\n\n        var sector = svg.append(\"path\")\n            .attr(\"fill\", \"none\")\n            .attr(\"class\", \"text4\")\n            .attr(\"stroke-width\", 1)\n            .attr(\"stroke\", \"darkgrey\")\n            .attr(\"transform\", \"translate(170, 340)\")\n            .attr(\"d\", arc2)\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text4\")\n            .text(\"Step 4\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 314)\n            .attr(\"font-weight\", \"bold\")\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"12px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text4\")\n            .text(\"Column names are\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 327)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text4\")\n            .text(\"converted to column\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 339)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        var textGroup4 = svg\n            .append(\"g\")\n            .attr(\"class\", \"textGroup4\")\n\n        svg.selectAll(\".text4\")\n            .each(function() { \n                textGroup4.append(() => this) \n            });\n\n        svg.selectAll(\"g.textGroup4\")\n            .attr(\"transform\", \"translate(250, -293)\")\n            \n        \n        svg.selectAll(\".text4\")\n            .transition()\n            .delay(1200)\n            .duration(250)\n            .attr(\"opacity\", 1)\n\n    }\n\n    function moveFifth(){\n\n        svg.selectAll(\".text4\")\n            .transition()\n            .delay(0)\n            .duration(100)\n            .attr(\"opacity\", 0.2)\n\n        svg.selectAll(\"g\")    \n            .filter(function() {\n                return !this.classList.contains('stay')\n              })\n            .clone(true)\n            .attr(\"class\", \"stay2\")\n\n\n        svg.selectAll(\"g.stay2\")\n            .transition()\n            .delay(0)\n            .duration(1600)\n            .ease(d3.easeCubicIn)\n            .attr(\"opacity\", 0.2)\n\n        svg.selectAll(\"g.square\")\n            .filter(function(d, i) { return i < 4})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 7)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(550, -75)\")\n        \n        svg.select(\"g.second\")\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 4)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(550, -50)\")\n\n        svg.selectAll(\"g.second\")\n            .filter(function(d, i) { return i == 1})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 5)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(550, -25)\")\n\n        svg.selectAll(\"g.second\")\n            .filter(function(d, i) { return i == 2})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 6)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(550, 0)\")\n\n        svg.selectAll(\"g.second\")\n            .filter(function(d, i) { return i > 2})\n            .transition()\n            .delay(function(d,i){ return i * del})\n            .duration(1000)\n            .attr(\"transform\", \"translate(590, -75)\")\n        \n        svg.selectAll(\"g.square\")\n            .filter(function(d, i) { return i > 3 && i < 8})\n            .lower()\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 7)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(550, 0)\")\n\n        svg.select(\"g.third\")\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 4)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(510, 25)\")\n\n        svg.selectAll(\"g.third\")\n            .filter(function(d, i) { return i == 1})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 5)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(510, 50)\")\n\n        svg.selectAll(\"g.third\")\n            .filter(function(d, i) { return i == 2})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 6)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(510, 75)\")\n\n        svg.selectAll(\"g.third\")\n            .filter(function(d, i) { return i > 2})\n            .transition()\n            .delay(function(d,i){ return i * del})\n            .duration(1000)\n            .attr(\"transform\", \"translate(550, 0)\")\n\n        svg.selectAll(\"g.square\")\n            .filter(function(d, i) { return i > 7 && i < 12})\n            .lower()\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 7)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(550, 75)\")\n\n        svg.select(\"g.fourth\")\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 4)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(470, 100)\")\n\n        svg.selectAll(\"g.fourth\")\n            .filter(function(d, i) { return i == 1})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 5)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(470, 125)\")\n\n        svg.selectAll(\"g.fourth\")\n            .filter(function(d, i) { return i == 2})\n            .transition()\n            .delay(function(d,i){ return i * del + (del * 6)})\n            .duration(1000)\n            .attr(\"transform\", \"translate(470, 150)\")\n\n        svg.selectAll(\"g.fourth\")\n            .filter(function(d, i) { return i > 2})\n            .transition()\n            .delay(function(d,i){ return i * del})\n            .duration(1000)\n            .attr(\"transform\", \"translate(510, 75)\")\n\n        var sector = svg.append(\"path\")\n            .attr(\"fill\", \"none\")\n            .attr(\"class\", \"text5\")\n            .attr(\"stroke-width\", 1)\n            .attr(\"stroke\", \"darkgrey\")\n            .attr(\"transform\", \"translate(170, 280)\")\n            .attr(\"d\", arc)\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text5\")\n            .text(\"Step 5\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 314)\n            .attr(\"font-weight\", \"bold\")\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"12px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text5\")\n            .text(\"All rows are\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 327)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        svg\n            .append(\"text\")\n            .attr(\"class\", \"text5\")\n            .text(\"bound together\")\n            .attr(\"x\", 180)\n            .attr(\"y\", 339)\n            .attr(\"text-anchor\", \"left\")\n            .style(\"font-size\", \"11px\")\n            .attr(\"opacity\", 0)\n\n        var textGroup5 = svg\n            .append(\"g\")\n            .attr(\"class\", \"textGroup5\")\n\n        svg.selectAll(\".text5\")\n            .each(function() { \n                textGroup5.append(() => this) \n            });\n\n        svg.selectAll(\"g.textGroup5\")\n            .attr(\"transform\", \"translate(490, 75)\")\n            \n        \n        svg.selectAll(\".text5\")\n            .transition()\n            .delay(1800)\n            .duration(250)\n            .attr(\"opacity\", 1)\n\n        }\n\n        function moveSixth(){\n            svg.selectAll(\".text5\")\n                .transition()\n                .delay(0)\n                .duration(100)\n                .attr(\"opacity\", 0.2)\n    \n            svg.append(\"rect\")\n                .attr(\"class\", \"colname\")\n                .attr('x', 610)\n                .attr('y', 95)\n                .attr('width', squareWidth)\n                .attr('height', squareHeight)\n                .attr(\"fill\", \"#a3a3a3\")\n                .attr(\"stroke\", \"white\")\n                .attr(\"stroke-width\", 3)\n                .attr(\"opacity, 0\")\n    \n                svg.append(\"rect\")\n                .attr(\"class\", \"colname\")\n                .attr('x', 650)\n                .attr('y', 95)\n                .attr('width', squareWidth)\n                .attr('height', squareHeight)\n                .attr(\"fill\", \"#a3a3a3\")\n                .attr(\"stroke\", \"white\")\n                .attr(\"stroke-width\", 3)\n                .attr(\"opacity, 0\")\n    \n                svg.append(\"text\")\n                .attr(\"class\", \"colname\")\n                .text(\"key\")\n                .attr('x', 610 + squareWidth/2)\n                .attr('y', 95 + squareHeight/2)\n                .attr(\"text-anchor\", \"middle\")\n                .attr(\"dominant-baseline\", \"central\")\n                .attr(\"font-weight\", \"bold\")\n                .style(\"font-size\", \"12px\")\n                .attr(\"fill\", \"black\")\n                .attr(\"opacity, 0\")\n                \n    \n                svg.append(\"text\")\n                .attr(\"class\", \"colname\")\n                .text(\"vals\")\n                .attr('x', 650 + squareWidth/2)\n                .attr('y', 95 + squareHeight/2)\n                .attr(\"text-anchor\", \"middle\")\n                .attr(\"dominant-baseline\", \"central\")\n                .attr(\"font-weight\", \"bold\")\n                .style(\"font-size\", \"12px\")\n                .attr(\"fill\", \"black\")\n                .attr(\"opacity, 0\")\n\n                svg.selectAll(\".colname\")\n                    .transition()\n                    .delay(0)\n                    .duration(500)\n                    .attr(\"opacity\", 1)\n\n                var sector = svg.append(\"path\")\n                    .attr(\"fill\", \"none\")\n                    .attr(\"class\", \"text6\")\n                    .attr(\"stroke-width\", 1)\n                    .attr(\"stroke\", \"darkgrey\")\n                    .attr(\"transform\", \"translate(170, 340)\")\n                    .attr(\"d\", arc2)\n                    .attr(\"opacity\", 0)\n        \n                svg\n                    .append(\"text\")\n                    .attr(\"class\", \"text6\")\n                    .text(\"Step 6\")\n                    .attr(\"x\", 180)\n                    .attr(\"y\", 314)\n                    .attr(\"font-weight\", \"bold\")\n                    .attr(\"text-anchor\", \"left\")\n                    .style(\"font-size\", \"12px\")\n                    .attr(\"opacity\", 0)\n        \n                svg\n                    .append(\"text\")\n                    .attr(\"class\", \"text6\")\n                    .text(\"Names are added\")\n                    .attr(\"x\", 180)\n                    .attr(\"y\", 327)\n                    .attr(\"text-anchor\", \"left\")\n                    .style(\"font-size\", \"11px\")\n                    .attr(\"opacity\", 0)\n        \n                svg\n                    .append(\"text\")\n                    .attr(\"class\", \"text6\")\n                    .text(\"to new columns\")\n                    .attr(\"x\", 180)\n                    .attr(\"y\", 339)\n                    .attr(\"text-anchor\", \"left\")\n                    .style(\"font-size\", \"11px\")\n                    .attr(\"opacity\", 0)\n        \n                var textGroup6 = svg\n                    .append(\"g\")\n                    .attr(\"class\", \"textGroup6\")\n        \n                svg.selectAll(\".text6\")\n                    .each(function() { \n                        textGroup6.append(() => this) \n                    });\n        \n                svg.selectAll(\"g.textGroup6\")\n                    .attr(\"transform\", \"translate(510, -255)\")\n                    \n                \n                svg.selectAll(\".text6\")\n                    .transition()\n                    .delay(700)\n                    .duration(250)\n                    .attr(\"opacity\", 1)\n    \n                \n                }\n\n                function moveSeventh(){\n                    svg.selectAll(\"g.stay, g.stay2\")\n                        .transition()\n                        .delay(0)\n                        .duration(200)\n                        .attr(\"opacity\", 1)\n        \n                    svg.selectAll(\".text1\")\n                        .transition()\n                        .delay(0)\n                        .duration(200)\n                        .attr(\"opacity\", 1)\n                    \n                    svg.selectAll(\".text2\")\n                        .transition()\n                        .delay(0)\n                        .duration(200)\n                        .attr(\"opacity\", 1)\n        \n                    svg.selectAll(\".text3\")\n                        .transition()\n                        .delay(0)\n                        .duration(200)\n                        .attr(\"opacity\", 1)\n        \n                    svg.selectAll(\".text4\")\n                        .transition()\n                        .delay(0)\n                        .duration(200)\n                        .attr(\"opacity\", 1)\n        \n                    svg.selectAll(\".text5\")\n                        .transition()\n                        .delay(0)\n                        .duration(200)\n                        .attr(\"opacity\", 1)\n\n                    svg.selectAll(\".button\")\n                        .transition()\n                        .delay(0)\n                        .duration(200)\n                        .style(\"opacity\", 0)\n\n                    svg.selectAll(\".textButton\")\n                        .transition()\n                        .delay(0)\n                        .duration(200)\n                        .style(\"opacity\", 0)\n        \n                    }\n\n    var count = 0\n\n\n    button\n\t\t.on('click', function() {\n\n            if (count == 0) {\n                moveFirst()\n                count += 1 \n            }\n            else if (count == 1) {\n                moveSecond()\n                count += 1\n            }\n            else if (count == 2) {\n                moveThird() \n                count += 1 \n            }\n            else if (count == 3) {\n                moveFourth()\n                count += 1\n            }\n            else if (count == 4){\n                moveFifth()\n                count += 1\n            }\n            else if (count == 5){\n                moveSixth()\n                count += 1\n            }\n            else {\n                moveSeventh()\n            }\n\t\t})\n};","style":null,"version":6,"theme":{"default":{"background":"#FFFFFF","foreground":"#000000"},"runtime":null},"useShadow":true},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

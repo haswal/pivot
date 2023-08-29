@@ -1,0 +1,60 @@
+---
+title: ""
+---
+
+<br>
+<br>
+
+```{css, echo=FALSE}
+code {
+    color: inherit;
+    background-color: white;
+    font-size: 19px !important;
+    font-weight: bold;
+}
+```
+
+`pivot_longer(cols = c(c1,c2,c3), names_to = "key", values_to = "vals")`
+
+<br>
+<br>
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(r2d3)
+
+d <- tibble(x = c(rep(10, 4),
+                  rep(10, 4),
+                  rep(10, 4),
+                  rep(50, 4), 
+                  rep(90, 4), 
+                  rep(130, 4)),
+            y = rep(c(120, 145, 170, 195),6),
+            color = c(rep("#d9d9d9", 12),       # 1
+                      
+                      "#df6e56",                # 2
+                      rep("#eba394", 3),      # 2 - light #edada0
+                      
+                      "#74AADB",                # 3
+                      rep("#a7c9e9", 3),      #3 - light b1cfeb
+                      
+                      "#FDBE4B",                # 4
+                      rep("#fed68d", 3)),      # 4 - light fedb99
+            text = c(rep(c("ID", "1", "2","3"), 3), 
+                     "c1", 
+                     rep("", 3), 
+                     "c2", 
+                     rep("", 3),
+                     "c3", 
+                     rep("", 3)))
+
+d <- d %>% 
+  mutate(x = x + 10,
+         y = y + 50)
+
+r2d3(data=d, 
+     script = "pivot_float.js",
+     height = 550, 
+     width = 900)
+```
+
